@@ -152,6 +152,7 @@ function print_summary() {
 function main() {
     check_dependencies
     check_port_25
+    print_summary
 
     for service_name in "${!domains[@]}"; do
         test_smtp "$service_name" "${domains[$service_name]}"
@@ -162,4 +163,3 @@ function main() {
 main
 exit 0
 
-print_summary
