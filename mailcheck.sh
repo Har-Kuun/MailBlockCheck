@@ -70,8 +70,10 @@ function check_port_25() {
     timeout 10 nc -z -w 10 smtp.aol.com 25 &> /dev/null
 
     if [ $? -ne 0 ]; then
-        echo "Outbound port 25 is blocked.\n\nPlease configure your firewall or contact your server provider to unblock it."
-        echo .
+        echo "Outbound port 25 is blocked."
+        echo ""
+        echo "Please configure your firewall or contact your server provider to unblock it."
+        echo ""
         exit 1
     fi
 
