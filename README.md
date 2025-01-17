@@ -1,5 +1,5 @@
 # MailBlockCheck
-A quick shell script to check whether or not your server IP is blocked by famous public SMTP mail services.
+A quick shell script to check whether or not your server IP is blocked by famous public SMTP mail services.&nbsp;&nbsp;
 If your server is blocked by many public SMTP servers, then it is better not to be used as a mail server.
 
 Tests against the following public email servers are performed:
@@ -16,6 +16,6 @@ The script will do all relevant tests and generate a table for you at the end of
 
 ![image](https://github.com/user-attachments/assets/9a518501-5337-463c-b823-87787b3a4401)
 
-Technically you want as many "220 OK" as possible.  An "Error 554" typically means your server is blocked by this specific public SMTP service.  A "timeout" or a "no response" could be due to temporary network issue, and you can try again later.
+Technically you want as many "220 OK" as possible.&nbsp;&nbsp;An "Error 554" typically means your server is blocked by this specific public SMTP service.&nbsp;&nbsp;A "timeout" or a "no response" could be due to temporary network issue, and you can try again later.
 
-Feel free to submit any issues that you find during using.  Happy mailing :)
+Feel free to submit any issues that you find during using.&nbsp;&nbsp;Happy mailing :)
